@@ -9,17 +9,6 @@ local controllers = {}
 local settingsCategory
 local minimapButton
 
-if not gsCastBarTweaksDB and CastBarControlDB then
-	gsCastBarTweaksDB = CastBarControlDB
-end
-
-if not gsCastBarTweaksFocusDB and CastBarControlFocusDB then
-	gsCastBarTweaksFocusDB = CastBarControlFocusDB
-end
-
-CastBarControlDB = nil
-CastBarControlFocusDB = nil
-
 local VALID_ANCHOR_POINTS = {
 	BOTTOM = true,
 	BOTTOMLEFT = true,

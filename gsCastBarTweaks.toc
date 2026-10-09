@@ -5,7 +5,7 @@
 ## Notes: Target and focus cast-bar placement controls.
 ## IconTexture: Interface\AddOns\gsCastBarTweaks\gsCastBarTweaks.tga
 ## DefaultState: Enabled
-## SavedVariables: gsCastBarTweaksDB, gsCastBarTweaksFocusDB, CastBarControlDB, CastBarControlFocusDB
+## SavedVariables: gsCastBarTweaksDB, gsCastBarTweaksFocusDB
 
 libs/LibStub/LibStub.lua
 libs/CallbackHandler-1.0/CallbackHandler-1.0.lua

@@ -10,7 +10,6 @@ gsCastBarTweaks is a Retail World of Warcraft addon for independently placing an
 - A one-click action to match the current Blizzard player cast bar's position, effective scale, and width.
 - Automatic separation of untouched target and focus defaults when they overlap.
 - Saved settings that persist across sessions.
-- A one-time migration of settings from the previous `CastBarControl` package name.
 
 ## Installation
 
@@ -52,14 +51,12 @@ Blizzard does not provide a supported API for third-party addons to register ind
 
 Position-changing operations are intended for use out of combat. The player-bar matching action and preview dragging are blocked during combat to avoid protected-frame and taint issues.
 
-## Saved settings and migration
+## Saved settings
 
 The current SavedVariables are:
 
 - `gsCastBarTweaksDB` for target-bar settings and shared preview/minimap settings.
 - `gsCastBarTweaksFocusDB` for focus-bar settings.
-
-On the first load after renaming, legacy `CastBarControlDB` and `CastBarControlFocusDB` data is copied into the new variables, then the old variables are cleared. This preserves existing placements without retaining the old addon identity.
 
 ## Included libraries
 
